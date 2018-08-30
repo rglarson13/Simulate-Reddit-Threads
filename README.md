@@ -3,7 +3,7 @@ Look at the top 1000 posts in a given subreddit and use a markov-ish chain to ge
 
 This originally started as an idea for a party game -- take satirical headlines from The Onion and real-but-strange headlines collected on Reddit's subreddit r/NotTheOnion, then try to decide which one was real and which was satire.
 
-Then I decided it'd be funny to add simulated headlines to the mix.
+Then I decided it'd be funny to add simulated headlines to the mix. Then I decided to expand my script a bit to simulate thread titles for any subreddit.
 
 I use a Markov-inspired process to choose the next word based on the previous (but my corpus isn't particularly comprehensive, so each subsequent word is chosen at random from words that _have_ followed the previous word, without concern for frequency/likelihood that it'll come next)
 
